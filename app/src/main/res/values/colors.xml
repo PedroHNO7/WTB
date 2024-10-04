@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global Colors -->
+    <color name="logo_color"> #C72C41 </color>
+    <color name="black_color"> #1E1F1E </color>
+    <color name="primary_color"> #FFC145 </color>
+    <color name="stroke_color"> #467399</color>
+
+    <!-- Light Theme -->
+    <color name="light_text_color"> #2A2B2A </color>
+    <color name="light_background_color"> #E8E8E4 </color>
+    <color name="light_placeholder_color"> #BDBDBD </color>
+
+    <!-- Dark Theme -->
+    <color name="dark_text_color"> #E8E8E4 </color>
+    <color name="dark_background_color"> #2A2B2A </color>
+    <color name="dark_placeholder_color"> #555555 </color>
+
+</resources>
