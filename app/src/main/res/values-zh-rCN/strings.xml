@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Watching The Beat</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_title"> 电影交响曲 </string>
+
+    <string name="splash_subtitle"> 当节奏和视觉讲述难忘的故事 </string>
+
+
+
+    <!-- Login Screen & SignIn Screen -->
+    <string name="email_label"> 电子邮件 </string>
+    <string name="name_label"> 姓名 </string>
+    <string name="cellphone_label"> 手机号码 </string>
+    <string name="password_label"> 密码 </string>
+
+    <string name="log_label"> 登录 </string>
+    <string name="sign_label"> 注册 </string>
+
+    <string name="option_sign"> 已经有账号？ </string>
+    <string name="option_login"> 还没有账号？ </string>
+
+    <string name="click_me"> 点击这里 </string>
+
+    <!-- Acessibility -->
+    <string name="splash_accessibility"> 带有音乐符号和“Watching the Beat”文字的电影场记板 </string>
+
+    <string name="moon_accessibility">月亮，代表深色模式</string>
+    <string name="sun_accessibility">太阳，代表浅色模式</string>
+
+</resources>

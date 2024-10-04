@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> Watching The Beat </string>
+
+    <!-- Splash Screen -->
+    <string name="splash_title"> Sinfonia Cinematográfica </string>
+    <string name="splash_subtitle"> Quando o ritmo e a imagem contam histórias inesquecíveis </string>
+
+    <!-- Login Screen & SignIn Screen -->
+    <string name="email_label"> E-Mail </string>
+    <string name="name_label"> Nome </string>
+    <string name="cellphone_label"> Núm. de Telefone </string>
+    <string name="password_label"> Senha </string>
+
+    <string name="log_label"> Entrar </string>
+    <string name="sign_label"> Registrar </string>
+
+    <string name="option_login"> Já tem conta? </string>
+    <string name="option_sign"> Não tem conta? </string>
+
+    <string name="click_me"> Clique Aqui </string>
+
+    <!-- Acessibility -->
+    <string name="splash_accessibility"> Um cliquete de cinema com notas músicais escrito "Watching the Beat" </string>
+
+    <string name="moon_accessibility"> Lua, representando o modo escuro </string>
+    <string name="sun_accessibility"> Sol, representando o modo claro </string>
+</resources>

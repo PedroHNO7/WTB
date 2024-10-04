@@ -8,5 +8,7 @@
     <!-- Icons -->
     <attr name="theme_icon_active_eye" format="reference"/>
     <attr name="theme_icon_inactive_eye" format="reference"/>
+    <attr name="theme_logo" format="reference" />
+    <attr name="theme_bigger_logo" format="reference" />
 
 </resources>

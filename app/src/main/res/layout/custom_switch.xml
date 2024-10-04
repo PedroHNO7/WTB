@@ -1,0 +1,65 @@
+<LinearLayout android:id="@+id/switch_container"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="16dp"
+    android:gravity="center_vertical"
+
+    android:orientation="horizontal"
+
+    android:padding="10dp"
+
+    android:background="@android:color/transparent">
+
+    <!-- Moon Icon (Dark Mode) -->
+    <ImageView android:id="@+id/moon_icon"
+
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+
+        app:tint="@color/black_color"
+        android:src="@drawable/ic_moon"
+
+        android:contentDescription="@string/moon_theme_accessibility" />
+
+    <!-- Toggle Slider -->
+    <RelativeLayout android:id="@+id/toggle_slider"
+
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+
+        android:background="@drawable/toggle_background">
+
+        <!-- Black Ball Inside Slider -->
+        <View android:id="@+id/toggle_ball"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+
+            android:background="@drawable/ball_background" />
+
+    </RelativeLayout>
+
+    <!-- Sun Icon (Light Mode) -->
+    <ImageView android:id="@+id/sun_icon"
+
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+
+        app:tint="@color/black_color"
+        android:src="@drawable/ic_sun"
+
+        android:contentDescription="@string/sun_accessibility" />
+</LinearLayout>

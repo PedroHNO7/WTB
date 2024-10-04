@@ -1,9 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.WTB" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Light Theme -->
+    <style name="Theme.WTB.Light" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="theme_background_color"> @color/light_background_color </item>
+        <item name="theme_text_color"> @color/light_text_color </item>
+        <item name="theme_placeholder_color"> @color/light_placeholder_color </item>
+
+        <!-- Icons -->
+        <item name="theme_icon_active_eye"> @drawable/ic_light_active_eye </item>
+        <item name="theme_icon_inactive_eye"> @drawable/ic_light_inactive_eye </item>
+        <item name="theme_logo"> @drawable/l_logo </item>
+        <item name="theme_bigger_logo"> @drawable/l_bigger_logo_alt</item>
     </style>
 
-    <style name="Theme.WTB" parent="Base.Theme.WTB" />
+    <!-- Dark Theme -->
+    <style name="Theme.WTB.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="theme_background_color"> @color/dark_background_color </item>
+        <item name="theme_text_color"> @color/dark_text_color </item>
+        <item name="theme_placeholder_color"> @color/dark_placeholder_color </item>
+
+        <!-- Icons -->
+        <item name="theme_icon_active_eye"> @drawable/ic_dark_active_eye </item>
+        <item name="theme_icon_inactive_eye"> @drawable/ic_dark_inactive_eye </item>
+        <item name="theme_logo"> @drawable/d_logo </item>
+        <item name="theme_bigger_logo"> @drawable/d_bigger_logo_alt</item>
+    </style>
 </resources>

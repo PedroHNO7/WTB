@@ -10,8 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WTB"
+        android:theme="@style/Theme.WTB.Light"
         tools:targetApi="31">
+        <activity
+            android:name=".Screens.MainActivity"
+            android:exported="false" />
         <activity
             android:name=".Screens.LoginActivity"
             android:exported="false" />

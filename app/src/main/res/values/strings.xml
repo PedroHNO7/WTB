@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">WTB</string>
+    <string name="app_name"> Watching The Beat </string>
+
+    <!-- Splash Screen -->
+    <string name="splash_title"> Cinematic Symphony </string>
+
+    <string name="splash_subtitle"> When rhythm and visuals tell unforgettable stories </string>
+
+    <!-- Login Screen & SignIn Screen -->
+    <string name="email_label"> E-Mail </string>
+    <string name="name_label"> Name </string>
+    <string name="cellphone_label"> Cell-Phone </string>
+    <string name="password_label"> Password </string>
+
+    <string name="log_label"> Login </string>
+    <string name="sign_label"> SignIn</string>
+
+    <string name="option_sign"> Already got a account? </string>
+    <string name="option_login"> Doesn\'t have account? </string>
+
+    <string name="click_me"> Click Here </string>
+
+    <!-- Acessibility -->
+    <string name="splash_accessibility"> Film clapperboard with musical notes and the text \'Watching the Beat' </string>
+
+    <string name="moon_accessibility"> Moon, representing the dark mode </string>
+    <string name="sun_accessibility"> Sun, representing the light mode </string>
+
+    <!-- Placeholders -->
+    <string name="name_placeholder" translatable="false"> John Doe </string>
+    <string name="email_placeholder" translatable="false"> johndoe@wtb.com </string>
+    <string name="phone_placeholder" translatable="false"> 31 91234-5678 </string>
+
 </resources>
