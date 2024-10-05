@@ -1,4 +1,4 @@
-package br.team.wtb.Utils;
+package br.team.wtb.Utils.Theme;
 
 import android.content.Context;
 import android.content.SharedPreferences;

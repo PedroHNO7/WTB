@@ -1,20 +1,15 @@
 package br.team.wtb.Screens;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import br.team.wtb.R;
-import br.team.wtb.Utils.ThemeManager;
+import br.team.wtb.Utils.Theme.ThemeManager;
 
 public class SignInActivity extends AppCompatActivity {
 

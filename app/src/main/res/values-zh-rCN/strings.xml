@@ -22,8 +22,13 @@
     <string name="click_me"> 点击这里 </string>
 
     <!-- Acessibility -->
-    <string name="splash_accessibility"> 带有音乐符号的电影拍板和文字 “观看节拍” </string>
-    <string name="moon_accessibility">月亮，代表深色模式</string>
     <string name="sun_accessibility">太阳，代表浅色模式</string>
+    <string name="moon_accessibility">月亮，代表深色模式</string>
+    <string name="star_accessibility"> 代表电影评分的星星 </string>
+    <string name="splash_accessibility"> 带有音乐符号的电影拍板和文字 “观看节拍” </string>
+
+    <string name="fav_accessbility"> 收藏图标 </string>
+    <string name="share_accessbility"> 分享图标 </string>
+    <string name="github_accessbility"> GitHub 图标 </string>
 
 </resources>

@@ -21,13 +21,16 @@
     <string name="click_me"> Click Here </string>
 
     <!-- Acessibility -->
-    <string name="splash_accessibility"> Film clapperboard with musical notes and the text Watching the Beat </string>
-    <string name="moon_accessibility"> Moon, representing the dark mode </string>
     <string name="sun_accessibility"> Sun, representing the light mode </string>
+    <string name="moon_accessibility"> Moon, representing the dark mode </string>
+    <string name="star_accessibility"> Stars representing the rating of the movie </string>
+    <string name="splash_accessibility"> Film clapperboard with musical notes and the text Watching the Beat </string>
 
-    <!-- Placeholders -->
-    <string name="name_placeholder" translatable="false"> John Doe </string>
-    <string name="email_placeholder" translatable="false"> johndoe@wtb.com </string>
-    <string name="phone_placeholder" translatable="false"> 31 91234-5678 </string>
+    <string name="share_accessbility"> Share Icon </string>
+    <string name="fav_accessbility"> Favorite Icon </string>
+    <string name="github_accessbility"> GitHub Icon </string>
 
+    <!-- Mock Data -->
+    <string name="mock_name" translatable="false"> Whiplash </string>
+    <string name="mock_year" translatable="false"> 2014 </string>
 </resources>

@@ -21,7 +21,12 @@
     <string name="click_me"> Clique Aqui </string>
 
     <!-- Acessibility -->
-    <string name="splash_accessibility"> Claquete de filme com notas musicais e o texto Assistindo o Ritmo </string>
-    <string name="moon_accessibility"> Lua, representando o modo escuro </string>
     <string name="sun_accessibility"> Sol, representando o modo claro </string>
+    <string name="moon_accessibility"> Lua, representando o modo escuro </string>
+    <string name="splash_accessibility"> Claquete de filme com notas musicais e o texto Assistindo o Ritmo </string>
+    <string name="star_accessibility"> Estrelas representando a nota do filme </string>
+
+    <string name="share_accessbility"> Ícone de Compartilhar </string>
+    <string name="fav_accessbility"> Ícone de Favorito </string>
+    <string name="github_accessbility"> Ícone do GitHub </string>
 </resources>

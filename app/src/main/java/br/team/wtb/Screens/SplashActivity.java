@@ -10,7 +10,7 @@ import android.view.animation.AlphaAnimation;
 import androidx.appcompat.app.AppCompatActivity;
 
 import br.team.wtb.R;
-import br.team.wtb.Utils.ThemeManager;
+import br.team.wtb.Utils.Theme.ThemeManager;
 
 public class SplashActivity extends AppCompatActivity {
 
