@@ -9,7 +9,6 @@ public class ThemeManager {
 
     // Nome das preferências compartilhadas
     private static final String PREFS_NAME = "AppPrefs";
-
     // Chave para armazenar o tema da aplicação
     private static final String KEY_THEME = "app_theme";
 
@@ -42,7 +41,7 @@ public class ThemeManager {
 
         // Se o tema atual é o padrão (Escuro), então vira claro, caso contrário, volta pro escuro
         currentTheme = (currentTheme == R.style.Theme_WTB_Dark) ? R.style.Theme_WTB_Light : R.style.Theme_WTB_Dark;
-
+        
         // Salva o novo tema nas preferências compartilhadas
         SharedPreferences preferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         preferences.edit().putInt(KEY_THEME, currentTheme).apply();
@@ -55,7 +54,6 @@ public class ThemeManager {
 
     // Método para aplicar o tema na atividade atual
     public void applyTheme(Context context) {
-
         // Define o tema antes de definir a visualização de conteúdo em cada atividade
         context.setTheme(currentTheme);
     }

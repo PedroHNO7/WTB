@@ -10,10 +10,11 @@
     <color name="light_text_color"> #2A2B2A </color>
     <color name="light_background_color"> #E8E8E4 </color>
     <color name="light_placeholder_color"> #BDBDBD </color>
+    <color name="light_system_color"> #2A2B2A </color>
 
     <!-- Dark Theme -->
     <color name="dark_text_color"> #E8E8E4 </color>
     <color name="dark_background_color"> #2A2B2A </color>
     <color name="dark_placeholder_color"> #555555 </color>
-
+    <color name="dark_system_color"> #E8E8E4 </color>
 </resources>

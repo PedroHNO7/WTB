@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import br.team.wtb.R;
@@ -23,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        EdgeToEdge.enable(this);
 
         // Encontra o contêiner do switch personalizado
         switchContainer = findViewById(R.id.theme_switch);

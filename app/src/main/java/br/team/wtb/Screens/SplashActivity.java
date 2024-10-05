@@ -25,6 +25,7 @@ public class SplashActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        EdgeToEdge.enable(this);
 
         // Encontra a raiz da SplashScreen
         View splashScreen = findViewById(R.id.splash_activity);
