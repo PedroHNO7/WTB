@@ -135,7 +135,7 @@
         android:textSize="24sp"
         android:text="@string/log_label"
         android:fontFamily="@font/montserrat_bold"
-        android:textColor="?attr/theme_background_color"
+        android:textColor="@color/light_text_color"
 
         android:backgroundTint="@color/primary_color"/>
 
