@@ -21,8 +21,7 @@
     <string name="click_me"> Clique Aqui </string>
 
     <!-- Acessibility -->
-    <string name="splash_accessibility"> Um cliquete de cinema com notas músicais escrito "Watching the Beat" </string>
-
+    <string name="splash_accessibility"> Claquete de filme com notas musicais e o texto Assistindo o Ritmo </string>
     <string name="moon_accessibility"> Lua, representando o modo escuro </string>
     <string name="sun_accessibility"> Sol, representando o modo claro </string>
 </resources>

@@ -25,7 +25,7 @@
         app:tint="@color/black_color"
         android:src="@drawable/ic_moon"
 
-        android:contentDescription="@string/moon_theme_accessibility" />
+        android:contentDescription="@string/moon_accessibility" />
 
     <!-- Toggle Slider -->
     <RelativeLayout android:id="@+id/toggle_slider"

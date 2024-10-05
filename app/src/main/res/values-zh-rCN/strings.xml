@@ -7,8 +7,6 @@
 
     <string name="splash_subtitle"> 当节奏和视觉讲述难忘的故事 </string>
 
-
-
     <!-- Login Screen & SignIn Screen -->
     <string name="email_label"> 电子邮件 </string>
     <string name="name_label"> 姓名 </string>
@@ -24,8 +22,7 @@
     <string name="click_me"> 点击这里 </string>
 
     <!-- Acessibility -->
-    <string name="splash_accessibility"> 带有音乐符号和“Watching the Beat”文字的电影场记板 </string>
-
+    <string name="splash_accessibility"> 带有音乐符号的电影拍板和文字 “观看节拍” </string>
     <string name="moon_accessibility">月亮，代表深色模式</string>
     <string name="sun_accessibility">太阳，代表浅色模式</string>
 

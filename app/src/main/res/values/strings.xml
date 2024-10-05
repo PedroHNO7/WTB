@@ -21,8 +21,7 @@
     <string name="click_me"> Click Here </string>
 
     <!-- Acessibility -->
-    <string name="splash_accessibility"> Film clapperboard with musical notes and the text \'Watching the Beat' </string>
-
+    <string name="splash_accessibility"> Film clapperboard with musical notes and the text Watching the Beat </string>
     <string name="moon_accessibility"> Moon, representing the dark mode </string>
     <string name="sun_accessibility"> Sun, representing the light mode </string>
 
