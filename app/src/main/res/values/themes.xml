@@ -5,6 +5,7 @@
         <item name="theme_background_color"> @color/light_background_color </item>
         <item name="theme_text_color"> @color/light_text_color </item>
         <item name="theme_placeholder_color"> @color/light_placeholder_color </item>
+        <item name="theme_icon_color"> @color/black_color</item>
 
         <!-- Icons -->
         <item name="theme_icon_active_eye"> @drawable/ic_light_active_eye </item>
@@ -18,6 +19,7 @@
         <item name="theme_background_color"> @color/dark_background_color </item>
         <item name="theme_text_color"> @color/dark_text_color </item>
         <item name="theme_placeholder_color"> @color/dark_placeholder_color </item>
+        <item name="theme_icon_color"> @color/light_background_color</item>
 
         <!-- Icons -->
         <item name="theme_icon_active_eye"> @drawable/ic_dark_active_eye </item>

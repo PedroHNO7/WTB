@@ -37,12 +37,10 @@ public class LoginActivity extends AppCompatActivity {
         switchContainer = findViewById(R.id.theme_switch);
 
         // Configura o ouvinte de clique para o switch
-        switchContainer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                themeManager.toggleTheme(LoginActivity.this);
-                recreate();
-            }
+        switchContainer.setOnClickListener(v -> {
+
+            themeManager.toggleTheme(LoginActivity.this);
+            recreate();
         });
 
         // Encontra os elementos (EditText e Botão)
@@ -52,20 +50,15 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn = findViewById(R.id.btn_login);
         signLink = findViewById(R.id.option_sign);
 
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        loginBtn.setOnClickListener(view -> {
 
-            }
         });
 
-        signLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent signScreen = new Intent(LoginActivity.this, SignInActivity.class);
-                
-                startActivity(signScreen);
-            }
+        signLink.setOnClickListener(view -> {
+
+            Intent signScreen = new Intent(LoginActivity.this, SignInActivity.class);
+
+            startActivity(signScreen);
         });
     }
 }

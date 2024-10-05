@@ -45,17 +45,14 @@ public class CustomThemeSwitch extends LinearLayout {
         updateToggleBallPosition();
 
         // Configura o ouvinte de clique para alternar o tema
-        setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        setOnClickListener(v -> {
 
-                themeManager.toggleTheme(context);
+            themeManager.toggleTheme(context);
 
-                isDarkMode = !isDarkMode;
+            isDarkMode = !isDarkMode;
 
-                updateToggleBallPosition();
-                ((AppCompatActivity) context).recreate();
-            }
+            updateToggleBallPosition();
+            ((AppCompatActivity) context).recreate();
         });
     }
 
