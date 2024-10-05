@@ -14,9 +14,8 @@
 
     tools:context=".Screens.LoginActivity">
 
-    <include android:id="@+id/custom_switch"
 
-        layout="@layout/custom_switch"
+    <br.team.wtb.Utils.CustomThemeSwitch android:id="@+id/theme_switch"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView android:id="@+id/logo"
+<ImageView android:id="@+id/logo"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +37,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/custom_switch" />
+        app:layout_constraintTop_toBottomOf="@id/theme_switch" />
 
 
     <LinearLayout android:id="@+id/email_section"
@@ -53,9 +52,6 @@
         android:layout_marginTop="32dp"
         android:layout_marginHorizontal="24dp"
 
-        android:clickable="true"
-        android:focusable="true"
-
         android:orientation="vertical">
 
         <TextView
@@ -69,6 +65,7 @@
             />
 
         <EditText android:id="@+id/email_input"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
@@ -95,9 +92,6 @@
         android:layout_marginTop="32dp"
         android:layout_marginHorizontal="24dp"
 
-        android:clickable="true"
-        android:focusable="true"
-
         android:orientation="vertical">
 
         <TextView
@@ -119,8 +113,8 @@
             android:layout_marginTop="24dp"
 
             android:textSize="16sp"
-            android:textColor="?attr/theme_background_color"
             android:fontFamily="@font/montserrat_medium"
+            android:textColor="?attr/theme_background_color"
 
             android:background="@drawable/input" />
     </LinearLayout>
@@ -140,8 +134,8 @@
 
         android:textSize="24sp"
         android:text="@string/log_label"
-        android:textColor="?attr/theme_text_color"
         android:fontFamily="@font/montserrat_bold"
+        android:textColor="?attr/theme_background_color"
 
         android:backgroundTint="@color/primary_color"/>
 

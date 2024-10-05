@@ -10,6 +10,7 @@ import android.view.animation.AlphaAnimation;
 import androidx.appcompat.app.AppCompatActivity;
 
 import br.team.wtb.R;
+import br.team.wtb.Utils.ThemeManager;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -18,10 +19,11 @@ public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Inicializa o ThemeManager e aplica o tema atual
+        ThemeManager themeManager = ThemeManager.getInstance(this);
+        themeManager.applyTheme(this);
+
         super.onCreate(savedInstanceState);
-
-        EdgeToEdge.enable(this);
-
         setContentView(R.layout.activity_splash);
 
         // Encontra a raiz da SplashScreen
@@ -41,11 +43,10 @@ public class SplashActivity extends AppCompatActivity {
 
                 @Override
                 public void onAnimationEnd(Animation animation) {
-                    // Começa a MainActivity
+                    // Começa a LoginActivity
                     Intent mainIntent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(mainIntent);
                     finish();
-                    // Override the transition animation
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 }
 
