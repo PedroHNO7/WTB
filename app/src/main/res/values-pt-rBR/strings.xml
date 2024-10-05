@@ -15,8 +15,8 @@
     <string name="log_label"> Entrar </string>
     <string name="sign_label"> Registrar </string>
 
-    <string name="option_login"> Já tem conta? </string>
-    <string name="option_sign"> Não tem conta? </string>
+    <string name="option_login"> Não tem conta? </string>
+    <string name="option_sign"> Já tem conta? </string>
 
     <string name="click_me"> Clique Aqui </string>
 

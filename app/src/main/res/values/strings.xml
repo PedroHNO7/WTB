@@ -13,7 +13,7 @@
     <string name="password_label"> Password </string>
 
     <string name="log_label"> Login </string>
-    <string name="sign_label"> SignIn</string>
+    <string name="sign_label"> SignIn </string>
 
     <string name="option_sign"> Already got a account? </string>
     <string name="option_login"> Doesn\'t have account? </string>

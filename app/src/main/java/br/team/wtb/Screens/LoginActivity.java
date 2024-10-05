@@ -1,7 +1,10 @@
 package br.team.wtb.Screens;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -13,7 +16,11 @@ import br.team.wtb.Utils.ThemeManager;
 public class LoginActivity extends AppCompatActivity {
 
     // Contêiner para o switch do tema
-    private LinearLayout switchContainer;
+    private LinearLayout switchContainer, signLink;
+
+    private EditText loginInput, passwordInput;
+
+    private Button loginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +42,29 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 themeManager.toggleTheme(LoginActivity.this);
                 recreate();
+            }
+        });
+
+        // Encontra os elementos (EditText e Botão)
+        loginInput = findViewById(R.id.email_input);
+        passwordInput = findViewById(R.id.password_input);
+
+        loginBtn = findViewById(R.id.btn_login);
+        signLink = findViewById(R.id.option_sign);
+
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        signLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent signScreen = new Intent(LoginActivity.this, SignInActivity.class);
+                
+                startActivity(signScreen);
             }
         });
     }

@@ -1,6 +1,7 @@
 package br.team.wtb.Utils;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +40,7 @@ public class CustomThemeSwitch extends LinearLayout {
         toggleBall = findViewById(R.id.toggle_ball);
 
         ThemeManager themeManager = ThemeManager.getInstance(context);
-        isDarkMode = themeManager.getCurrentTheme() == R.style.Theme_WTB_Dark;
+        isDarkMode = themeManager.getCurrentTheme(context) == R.style.Theme_WTB_Dark;
 
         updateToggleBallPosition();
 

@@ -2,6 +2,7 @@ package br.team.wtb.Utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import br.team.wtb.R;
 
@@ -45,11 +46,14 @@ public class ThemeManager {
         // Salva o novo tema nas preferências compartilhadas
         SharedPreferences preferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         preferences.edit().putInt(KEY_THEME, currentTheme).apply();
+
+        Log.d("ThemeManager", "Current theme saved: " + (currentTheme == R.style.Theme_WTB_Dark ? "Dark" : "Light"));
     }
 
     // Método para obter o tema atual
-    public int getCurrentTheme() {
-        return currentTheme;
+    public int getCurrentTheme(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        return preferences.getInt(KEY_THEME, R.style.Theme_WTB_Dark);
     }
 
     // Método para aplicar o tema na atividade atual
