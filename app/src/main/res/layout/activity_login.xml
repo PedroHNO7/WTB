@@ -12,7 +12,7 @@
 
     android:background="?attr/theme_background_color"
 
-    tools:context=".Screens.LoginActivity">
+    tools:context=".Screens.Register.LoginActivity">
 
     <br.team.wtb.Utils.Theme.CustomThemeSwitch android:id="@+id/theme_switch"
 

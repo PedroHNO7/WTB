@@ -12,7 +12,7 @@
 
     android:background="?attr/theme_background_color"
 
-    tools:context=".Screens.HomeActivity">
+    tools:context=".Screens.Inside.HomeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

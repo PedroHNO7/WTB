@@ -5,7 +5,8 @@ import android.content.Intent;
 import android.widget.TextView;
 
 import br.team.wtb.R;
-import br.team.wtb.Screens.HomeActivity;
+import br.team.wtb.Screens.Inside.AboutActivity;
+import br.team.wtb.Screens.Inside.HomeActivity;
 
 public class MenuController {
 
@@ -34,7 +35,7 @@ public class MenuController {
         });
 
         aboutItem.setOnClickListener(v -> {
-            Intent intent = new Intent(activity, HomeActivity.class);
+            Intent intent = new Intent(activity, AboutActivity.class);
             activity.startActivity(intent);
         });
 

@@ -1,7 +1,6 @@
-package br.team.wtb.Screens;
+package br.team.wtb.Screens.Inside;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
@@ -49,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
 
         // Configura o ouvinte de clique para o switch
         switchContainer.setOnClickListener(v -> {
+
             themeManager.toggleTheme(HomeActivity.this);
             recreate();
         });
@@ -59,6 +59,7 @@ public class HomeActivity extends AppCompatActivity {
 
         // Configura o ouvinte de clique para o botão do menu
         btnMenu.setOnClickListener(v -> {
+
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 drawerLayout.closeDrawer(GravityCompat.START); // Close the drawer if it's open
             } else {

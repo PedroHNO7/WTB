@@ -16,7 +16,7 @@
 
     android:background="?attr/theme_background_color"
 
-    tools:context=".Screens.SplashActivity" >
+    tools:context=".Screens.Register.SplashActivity" >
 
         <ImageView
             android:layout_width="wrap_content"

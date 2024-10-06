@@ -1,4 +1,4 @@
-package br.team.wtb.Screens;
+package br.team.wtb.Screens.Register;
 
 import android.os.Bundle;
 import android.view.View;

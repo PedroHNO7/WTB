@@ -1,6 +1,5 @@
-package br.team.wtb.Screens;
+package br.team.wtb.Screens.Register;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,14 +11,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import br.team.wtb.R;
 import br.team.wtb.Utils.Theme.ThemeManager;
 
-public class LoginActivity extends AppCompatActivity {
+public class SignInActivity extends AppCompatActivity {
 
     // Contêiner para o switch do tema
-    private LinearLayout switchContainer, signLink;
+    private LinearLayout switchContainer, loginLink;
 
-    private EditText loginInput, passwordInput;
+    private EditText loginInput, passwordInput, nameInput, cellphoneInput;
 
-    private Button loginBtn;
+    private Button signBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         themeManager.applyTheme(this);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_sign_in);
         EdgeToEdge.enable(this);
 
         // Encontra o contêiner do switch personalizado
@@ -37,29 +36,24 @@ public class LoginActivity extends AppCompatActivity {
 
         // Configura o ouvinte de clique para o switch
         switchContainer.setOnClickListener(v -> {
-
-            themeManager.toggleTheme(LoginActivity.this);
+            themeManager.toggleTheme(SignInActivity.this);
             recreate();
         });
 
         // Encontra os elementos (EditText e Botão)
         loginInput = findViewById(R.id.email_input);
         passwordInput = findViewById(R.id.password_input);
+        nameInput = findViewById(R.id.name_input);
+        cellphoneInput = findViewById(R.id.cellphone_input);
 
-        loginBtn = findViewById(R.id.btn_login);
-        signLink = findViewById(R.id.option_sign);
+        signBtn = findViewById(R.id.btn_sign);
+        loginLink = findViewById(R.id.option_login);
 
-        loginBtn.setOnClickListener(view -> {
-            Intent homeScreen = new Intent(LoginActivity.this, HomeActivity.class);
+        signBtn.setOnClickListener(view -> {
 
-            startActivity(homeScreen);
         });
 
-        signLink.setOnClickListener(view -> {
+        loginLink.setOnClickListener(view -> finish());
 
-            Intent signScreen = new Intent(LoginActivity.this, SignInActivity.class);
-
-            startActivity(signScreen);
-        });
     }
 }
