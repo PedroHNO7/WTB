@@ -16,6 +16,7 @@ import java.util.List;
 
 import br.team.wtb.Model.Movie;
 import br.team.wtb.R;
+import br.team.wtb.Utils.Menu.MenuController;
 import br.team.wtb.Utils.Movie.MovieAdapter;
 import br.team.wtb.Utils.Theme.ThemeManager;
 
@@ -61,11 +62,14 @@ public class HomeActivity extends AppCompatActivity {
         btnMenu.setOnClickListener(v -> {
 
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-                drawerLayout.closeDrawer(GravityCompat.START); // Close the drawer if it's open
+                drawerLayout.closeDrawer(GravityCompat.START);
             } else {
-                drawerLayout.openDrawer(GravityCompat.START); // Open the drawer if it's closed
+                drawerLayout.openDrawer(GravityCompat.START);
             }
         });
+
+        MenuController menuController = new MenuController(this);
+        menuController.setupMenu();
 
         // Inicializa o menu com Manager
         moviesContainer = findViewById(R.id.movies_container);
