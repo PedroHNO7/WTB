@@ -40,9 +40,9 @@ public class HomeActivity extends AppCompatActivity {
         ThemeManager themeManager = ThemeManager.getInstance(this);
         themeManager.applyTheme(this);
 
+        EdgeToEdge.enable(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        EdgeToEdge.enable(this);
 
         // Inicializa o contêiner do tema
         switchContainer = findViewById(R.id.theme_switch);
