@@ -13,7 +13,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-
         android:layout_margin="16dp"
 
         android:src="@drawable/img_poster_whiplash"
@@ -32,6 +31,20 @@
         android:textColor="?attr/theme_text_color"
         android:fontFamily="@font/lobster" />
 
+    <TextView android:id="@+id/lblYear"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="24dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/lblTitle"
+
+        android:textSize="18sp"
+        android:text="@string/mock_year"
+        android:textColor="?attr/theme_text_color"
+        android:fontFamily="@font/montserrat_bold" />
 
     <LinearLayout android:id="@+id/star_section"
 
@@ -54,6 +67,7 @@
 
             android:src="@drawable/ic_star_inactive"
             android:background="@android:color/transparent"
+
             android:contentDescription="@string/star_accessibility" />
 
         <ImageView android:id="@+id/star2"
@@ -106,6 +120,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginHorizontal="2dp"
+
         android:layout_below="@+id/star_section"
         android:layout_toEndOf="@id/img_movie"
 
@@ -137,10 +153,12 @@
 
     <View android:id="@+id/line"
 
-        android:layout_width="240dp"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
 
-        android:layout_marginVertical="24dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginVertical="32dp"
+
         android:layout_below="@id/btn_section"
         android:layout_alignParentEnd="true"
 

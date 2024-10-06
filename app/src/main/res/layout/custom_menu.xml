@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_panel"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="?attr/theme_background_color"
+
+    android:paddingHorizontal="24dp">
+
+    <TextView
+        android:id="@+id/home_item"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="16dp"
+
+        android:text="Home"
+        android:textSize="18sp"
+
+        android:drawablePadding="8dp"
+        app:drawableStartCompat="@drawable/ic_home"
+        />
+
+    <TextView android:id="@+id/share_item"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="16dp"
+
+        android:text="Share"
+        android:textSize="18sp"
+
+        android:drawablePadding="8dp"
+        app:drawableStartCompat="@drawable/ic_share" />
+
+</LinearLayout>
