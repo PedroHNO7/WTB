@@ -33,4 +33,15 @@
     <!-- Mock Data -->
     <string name="mock_name" translatable="false"> Whiplash </string>
     <string name="mock_year" translatable="false"> 2014 </string>
+
+    <!-- Menu Items -->
+    <string name="menu_home"> Home </string>
+
+    <string name="menu_share"> Share </string>
+
+    <string name="menu_about"> About Us </string>
+
+    <string name="menu_fav"> Favorites </string>
+
+    <string name="menu_exit"> Exit </string>
 </resources>

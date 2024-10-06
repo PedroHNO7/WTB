@@ -11,7 +11,7 @@
         <item name="theme_icon_active_eye"> @drawable/ic_light_active_eye </item>
         <item name="theme_icon_inactive_eye"> @drawable/ic_light_inactive_eye </item>
         <item name="theme_logo"> @drawable/l_logo </item>
-        <item name="theme_bigger_logo"> @drawable/l_bigger_logo_alt</item>
+        <item name="theme_bigger_logo">@drawable/l_bigger_logo_alt</item>
     </style>
 
     <!-- Dark Theme -->

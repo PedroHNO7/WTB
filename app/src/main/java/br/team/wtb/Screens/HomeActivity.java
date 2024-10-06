@@ -1,10 +1,14 @@
 package br.team.wtb.Screens;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,11 +25,13 @@ public class HomeActivity extends AppCompatActivity {
     // Contêiner para o switch do tema
     private LinearLayout switchContainer;
 
+    //  Contêiner e Botão do Menu
+    private ImageButton btnMenu;
+    private DrawerLayout drawerLayout;
+
     private List<Movie> movieList;
     private MovieAdapter movieAdapter;
     private RecyclerView moviesContainer;
-
-    private LinearLayout menuPanel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +44,26 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         EdgeToEdge.enable(this);
 
-        // Encontra o contêiner do switch personalizado
+        // Inicializa o contêiner do tema
         switchContainer = findViewById(R.id.theme_switch);
 
         // Configura o ouvinte de clique para o switch
         switchContainer.setOnClickListener(v -> {
             themeManager.toggleTheme(HomeActivity.this);
             recreate();
+        });
+
+        // Inicializa o contêiner do menu e botão
+        btnMenu = findViewById(R.id.btn_menu);
+        drawerLayout = findViewById(R.id.home_activity);
+
+        // Configura o ouvinte de clique para o botão do menu
+        btnMenu.setOnClickListener(v -> {
+            if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                drawerLayout.closeDrawer(GravityCompat.START); // Close the drawer if it's open
+            } else {
+                drawerLayout.openDrawer(GravityCompat.START); // Open the drawer if it's closed
+            }
         });
 
         // Inicializa o menu com Manager

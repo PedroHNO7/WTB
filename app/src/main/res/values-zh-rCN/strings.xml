@@ -31,4 +31,16 @@
     <string name="share_accessbility"> 分享图标 </string>
     <string name="github_accessbility"> GitHub 图标 </string>
 
+    <!-- Menu Items -->
+    <string name="menu_home">主页</string>
+
+    <string name="menu_share">分享</string>
+
+    <string name="menu_about">关于我们</string>
+
+    <string name="menu_fav">收藏</string>
+
+    <string name="menu_exit">退出</string>
+
+
 </resources>

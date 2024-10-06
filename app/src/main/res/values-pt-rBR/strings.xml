@@ -29,4 +29,16 @@
     <string name="share_accessbility"> Ícone de Compartilhar </string>
     <string name="fav_accessbility"> Ícone de Favorito </string>
     <string name="github_accessbility"> Ícone do GitHub </string>
+
+    <!-- Menu Items -->
+    <string name="menu_home">Início</string>
+
+    <string name="menu_share">Compartilhar</string>
+
+    <string name="menu_about">Sobre Nós</string>
+
+    <string name="menu_fav">Favoritos</string>
+
+    <string name="menu_exit">Sair</string>
+
 </resources>
