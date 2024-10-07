@@ -41,4 +41,13 @@
 
     <string name="menu_exit">Sair</string>
 
+    <!-- Devs -->
+    <string name="one_dev_role"> Desenvolvedor &amp; Designer </string>
+    <string name="one_dev_description">Desenvolvedor Full-Stack na empresa de soluções tecnológicas Teknisa. \n\nAtualmente cursando Sistemas de Informação na PUC Minas, além de um curso técnico em Desenvolvimento de Sistemas com ênfase em aplicações móveis na UFMG.</string>
+
+    <string name="two_dev_role"> Desenvolvedor </string>
+    <string name="two_dev_description">Gerente de Estoque na empresa de vendas online SBBOX. \n\nAtualmente cursando um curso técnico em Desenvolvimento de Sistemas com ênfase em aplicações móveis na UFMG.</string>
+
+    <string name="three_dev_role"> Desenvolvedor </string>
+    <string name="three_dev_description">Biólogo formado pela PUC Minas em 2022 e apaixonado por tecnologia. \n\nAtualmente cursando Sistemas de Informação na PUC Minas, além de um curso técnico em Desenvolvimento de Sistemas com ênfase em aplicações móveis na UFMG.</string>
 </resources>

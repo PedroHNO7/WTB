@@ -44,4 +44,15 @@
     <string name="menu_fav"> Favorites </string>
 
     <string name="menu_exit"> Exit </string>
+
+    <!-- Devs -->
+
+    <string name="one_dev_role"> Developer &amp; Designer </string>
+    <string name="one_dev_description">Full-Stack Developer at the technology solutions company Teknisa. \n\nCurrently pursuing a degree in Information Systems at PUC Minas, as well as a technical course in Systems Development with an emphasis on mobile applications at UFMG.</string>
+
+    <string name="two_dev_role"> Developer </string>
+    <string name="two_dev_description">Stock Manager at the online sales company SBBOX. \n\nCurrently pursuing a technical course in Systems Development with an emphasis on mobile applications at UFMG.</string>
+
+    <string name="three_dev_role"> Developer </string>
+    <string name="three_dev_description">Biologist graduated from PUC Minas in 2022 and passionate about technology. \n\nCurrently pursuing a degree in Information Systems at PUC Minas, as well as a technical course in Systems Development with an emphasis on mobile applications at UFMG.</string>
 </resources>

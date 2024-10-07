@@ -42,5 +42,13 @@
 
     <string name="menu_exit">退出</string>
 
+    <!-- Devs -->
+    <string name="one_dev_role"> 开发人员 &amp; 设计师 </string>
+    <string name="one_dev_description">Teknisa技术解决方案公司全栈开发人员。 \n\n目前正在PUC Minas攻读信息系统学位，并在UFMG参加以移动应用为重点的系统开发技术课程。</string>
 
+    <string name="two_dev_role"> 开发人员 </string>
+    <string name="two_dev_description">SBBOX在线销售公司的库存经理。 \n\n目前正在UFMG参加以移动应用为重点的系统开发技术课程。</string>
+
+    <string name="three_dev_role"> 开发人员 </string>
+    <string name="three_dev_description">2022年毕业于PUC Minas的生物学家，热爱技术。 \n\n目前正在PUC Minas攻读信息系统学位，并在UFMG参加以移动应用为重点的系统开发技术课程。</string>
 </resources>

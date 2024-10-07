@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import br.team.wtb.Model.Developer;
 import br.team.wtb.Model.Movie;
 import br.team.wtb.R;
 
@@ -64,6 +65,27 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
             movie.setFavorite(!movie.getFavorite());
             holder.btnFav.setImageResource(movie.getFavorite() ? R.drawable.ic_active_bookmark : R.drawable.ic_inactive_bookmark);
         });
+
+        // Configura o clique no botão de compartilhar
+        holder.btnShare.setOnClickListener(v -> {
+
+            shareMovieInfo(v, movie);
+        });
+    }
+
+    // Método para compartilhar os dados do Filme
+    private void shareMovieInfo(View view, Movie movie) {
+
+        String shareText = "WTB: " + "github.com/devduque/WTB" +
+                "\nMovie from WTB: " + movie.getMovieName() +
+                "\nYear: " + movie.getMovieYear() +
+                "\nRating: " + movie.getMovieRating() +
+                "\nTrailer: " + movie.getMovieTrailerLink();
+
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, shareText);
+        view.getContext().startActivity(Intent.createChooser(shareIntent, "Share Movie via"));
     }
 
     // Método para atualizar as estrelas de avaliação com base na classificação do filme
@@ -93,6 +115,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
         TextView lblTitle;
 
         ImageView btnFav;
+        ImageView btnShare;
         ImageView[] stars = new ImageView[5];
 
         // Construtor do ViewHolder
@@ -103,7 +126,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
             // Inicializa os componentes de visualização
             imgMovie = itemView.findViewById(R.id.img_movie);
             lblTitle = itemView.findViewById(R.id.lblTitle);
+
             btnFav = itemView.findViewById(R.id.btn_fav);
+            btnShare= itemView.findViewById(R.id.btn_share);
 
             // Inicializa as estrelas
             stars[0] = itemView.findViewById(R.id.star1);

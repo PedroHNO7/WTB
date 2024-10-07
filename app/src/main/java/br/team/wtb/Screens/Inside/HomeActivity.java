@@ -18,6 +18,7 @@ import br.team.wtb.Model.Movie;
 import br.team.wtb.R;
 import br.team.wtb.Utils.Menu.MenuController;
 import br.team.wtb.Utils.Movie.MovieAdapter;
+import br.team.wtb.Utils.Movie.MovieRepository;
 import br.team.wtb.Utils.Theme.ThemeManager;
 
 public class HomeActivity extends AppCompatActivity {
@@ -29,7 +30,6 @@ public class HomeActivity extends AppCompatActivity {
     private ImageButton btnMenu;
     private DrawerLayout drawerLayout;
 
-    private List<Movie> movieList;
     private MovieAdapter movieAdapter;
     private RecyclerView moviesContainer;
 
@@ -58,9 +58,12 @@ public class HomeActivity extends AppCompatActivity {
         btnMenu = findViewById(R.id.btn_menu);
         drawerLayout = findViewById(R.id.home_activity);
 
+        // Inicializa o menu com Manager
+        MenuController menuController = new MenuController(this);
+        menuController.setupMenu();
+
         // Configura o ouvinte de clique para o botão do menu
         btnMenu.setOnClickListener(v -> {
-
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 drawerLayout.closeDrawer(GravityCompat.START);
             } else {
@@ -68,20 +71,13 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        MenuController menuController = new MenuController(this);
-        menuController.setupMenu();
-
-        // Inicializa o menu com Manager
+        // Inicializa o container de filmes
         moviesContainer = findViewById(R.id.movies_container);
         moviesContainer.setLayoutManager(new LinearLayoutManager(this));
 
-        // Adiciona a lista de filmes
-        movieList = new ArrayList<Movie>();
-        movieList.add(new Movie(R.drawable.img_poster_whiplash, "Whiplash", 2014, 5, false, "yes"));
-        movieList.add(new Movie(R.drawable.img_poster_whiplash, "Whiplash", 2014, 5, false, "yes"));
-
-        // Passa a lista pro Adapter
-        movieAdapter = new MovieAdapter(movieList);
+        // Pega o Repository (responsável pelo carregamento e adição de filmes) & Seta no Adapter
+        MovieRepository movieRepository = MovieRepository.getInstance();
+        movieAdapter = new MovieAdapter(movieRepository.getMovies());
         moviesContainer.setAdapter(movieAdapter);
     }
 }
