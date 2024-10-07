@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import br.team.wtb.R;
 import br.team.wtb.Screens.Inside.AboutActivity;
+import br.team.wtb.Screens.Inside.FavoritesActivity;
 import br.team.wtb.Screens.Inside.HomeActivity;
 import br.team.wtb.Screens.Register.LoginActivity;
 
@@ -43,7 +44,7 @@ public class MenuController {
         });
 
         favItem.setOnClickListener(v -> {
-            Intent intent = new Intent(activity, HomeActivity.class);
+            Intent intent = new Intent(activity, FavoritesActivity.class);
             activity.startActivity(intent);
         });
 

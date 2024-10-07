@@ -21,6 +21,8 @@
 
     <string name="click_me"> 点击这里 </string>
 
+    <string name="fav_screen">你的最爱</string>
+
     <!-- Acessibility -->
     <string name="sun_accessibility">太阳，代表浅色模式</string>
     <string name="moon_accessibility">月亮，代表深色模式</string>

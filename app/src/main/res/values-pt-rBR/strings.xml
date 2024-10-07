@@ -20,6 +20,8 @@
 
     <string name="click_me"> Clique Aqui </string>
 
+    <string name="fav_screen">Seus Favoritos</string>
+
     <!-- Acessibility -->
     <string name="sun_accessibility"> Sol, representando o modo claro </string>
     <string name="moon_accessibility"> Lua, representando o modo escuro </string>
