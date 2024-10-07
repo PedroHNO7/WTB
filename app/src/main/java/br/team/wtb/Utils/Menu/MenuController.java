@@ -1,5 +1,7 @@
 package br.team.wtb.Utils.Menu;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.widget.TextView;
@@ -7,6 +9,7 @@ import android.widget.TextView;
 import br.team.wtb.R;
 import br.team.wtb.Screens.Inside.AboutActivity;
 import br.team.wtb.Screens.Inside.HomeActivity;
+import br.team.wtb.Screens.Register.LoginActivity;
 
 public class MenuController {
 
@@ -45,7 +48,9 @@ public class MenuController {
         });
 
         exitItem.setOnClickListener(v -> {
-            activity.finish();
+            Intent intent = new Intent(activity, LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            activity.startActivity(intent);
         });
     }
 }
