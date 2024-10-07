@@ -87,7 +87,7 @@ public class AboutActivity extends AppCompatActivity {
 
         devList.add(new Developer(R.drawable.img_poster_pedro, "Pedro H.N Oliveira", getString(R.string.two_dev_role), getString(R.string.two_dev_description), "https://github.com/PedroHNO7"));
 
-        devList.add(new Developer(R.drawable.img_poster_vicente, "Vicente do Carmo", getString(R.string.two_dev_role), getString(R.string.two_dev_description), "https://github.com/vicentecss"));
+        devList.add(new Developer(R.drawable.img_poster_vicente, "Vicente do Carmo", getString(R.string.three_dev_role), getString(R.string.three_dev_description), "https://github.com/vicentecss"));
 
         // Passa a lista pro Adapter
         devAdapter = new DeveloperAdapter(devList);
