@@ -55,7 +55,7 @@ public class FavoritesActivity extends AppCompatActivity {
 
         // Inicializa o contêiner do menu e botão
         btnMenu = findViewById(R.id.btn_menu);
-        drawerLayout = findViewById(R.id.home_activity);
+        drawerLayout = findViewById(R.id.favorites_activity);
 
         // Inicializa o menu com Manager
         MenuController menuController = new MenuController(this);
