@@ -64,13 +64,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
             movie.setFavorite(!movie.getFavorite());
             holder.btnFav.setImageResource(movie.getFavorite() ? R.drawable.ic_active_bookmark : R.drawable.ic_inactive_bookmark);
-
-            if (!movie.getFavorite()) {
-                // Remove the movie from the list and notify the adapter
-                removeMovie(position);
-            } else {
-                notifyItemChanged(position);
-            }
         });
 
         // Configura o clique no botão de compartilhar
@@ -78,12 +71,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
             shareMovieInfo(v, movie);
         });
-    }
-
-    // Método para remover um filme da lista e notificar o adaptador
-    private void removeMovie(int position) {
-        movieList.remove(position);
-        notifyItemRemoved(position);
     }
 
     // Método para compartilhar os dados do Filme
