@@ -23,13 +23,11 @@ public class UserDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Criação da tabela no momento da criação do banco
         db.execSQL(CREATE_TABLE_USERS);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Atualiza o esquema, se necessário
         db.execSQL("DROP TABLE IF EXISTS users");
         onCreate(db);
     }
